@@ -8,6 +8,16 @@
   analytics.load("m334UE6UX2RGhBae4CEUG1OoK3xNuxaY");
   analytics.page();
   }}();
+  
+  analytics.identify(' {{user.id}} ', {
+  name: '{{user.fullname}}',
+  email: '{{user.email}}'
+  });
+    
+  analytics.track('Signed Up', {
+  shoe: '{{user.shoeType}}'
+  });
+
   </script>
 </head> 
 <body> 
